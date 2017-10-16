@@ -1,0 +1,4 @@
+MATCH (s:Company),(c:Company)
+WHERE s.name IN c.supplyer
+CREATE (s)-[r:得意先]->(c)
+RETURN r;
